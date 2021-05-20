@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/github-job-finder/static/css/main.21089a26.chunk.css",
-    "main.js": "/github-job-finder/static/js/main.abfc900d.chunk.js",
-    "main.js.map": "/github-job-finder/static/js/main.abfc900d.chunk.js.map",
-    "runtime-main.js": "/github-job-finder/static/js/runtime-main.6dc7dc23.js",
-    "runtime-main.js.map": "/github-job-finder/static/js/runtime-main.6dc7dc23.js.map",
-    "static/js/2.d187c198.chunk.js": "/github-job-finder/static/js/2.d187c198.chunk.js",
-    "static/js/2.d187c198.chunk.js.map": "/github-job-finder/static/js/2.d187c198.chunk.js.map",
-    "static/js/3.13d83d8c.chunk.js": "/github-job-finder/static/js/3.13d83d8c.chunk.js",
-    "static/js/3.13d83d8c.chunk.js.map": "/github-job-finder/static/js/3.13d83d8c.chunk.js.map",
+    "main.css": "/github-job-finder/static/css/main.b2f98bf4.chunk.css",
+    "main.js": "/github-job-finder/static/js/main.7b8cb837.chunk.js",
+    "main.js.map": "/github-job-finder/static/js/main.7b8cb837.chunk.js.map",
+    "runtime-main.js": "/github-job-finder/static/js/runtime-main.d7b8bb06.js",
+    "runtime-main.js.map": "/github-job-finder/static/js/runtime-main.d7b8bb06.js.map",
+    "static/js/2.c3889bbf.chunk.js": "/github-job-finder/static/js/2.c3889bbf.chunk.js",
+    "static/js/2.c3889bbf.chunk.js.map": "/github-job-finder/static/js/2.c3889bbf.chunk.js.map",
+    "static/js/3.b4cd642c.chunk.js": "/github-job-finder/static/js/3.b4cd642c.chunk.js",
+    "static/js/3.b4cd642c.chunk.js.map": "/github-job-finder/static/js/3.b4cd642c.chunk.js.map",
     "index.html": "/github-job-finder/index.html",
-    "static/css/main.21089a26.chunk.css.map": "/github-job-finder/static/css/main.21089a26.chunk.css.map",
-    "static/js/2.d187c198.chunk.js.LICENSE.txt": "/github-job-finder/static/js/2.d187c198.chunk.js.LICENSE.txt",
+    "static/css/main.b2f98bf4.chunk.css.map": "/github-job-finder/static/css/main.b2f98bf4.chunk.css.map",
+    "static/js/2.c3889bbf.chunk.js.LICENSE.txt": "/github-job-finder/static/js/2.c3889bbf.chunk.js.LICENSE.txt",
     "static/media/job-logo.bb022661.svg": "/github-job-finder/static/media/job-logo.bb022661.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6dc7dc23.js",
-    "static/js/2.d187c198.chunk.js",
-    "static/css/main.21089a26.chunk.css",
-    "static/js/main.abfc900d.chunk.js"
+    "static/js/runtime-main.d7b8bb06.js",
+    "static/js/2.c3889bbf.chunk.js",
+    "static/css/main.b2f98bf4.chunk.css",
+    "static/js/main.7b8cb837.chunk.js"
   ]
 }
