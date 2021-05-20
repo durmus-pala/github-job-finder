@@ -1,24 +1,44 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Form.css";
 import axios from "axios";
 
-export default function Form() {
+export default function Form({ setData }) {
+  const description = useRef();
+  const location = useRef();
   const newQuerry = () => {
-    let description = "engineer";
-    let location = "usa";
     axios
-      .get(`./positions.json?description=${description}&location=${location}`)
-      .then((res) => console.log(res));
+      .get(
+        `./positions.json?description=${description.current.value}&location=${location.current.value}`
+      )
+      .then((res) => {
+        console.log(res);
+        setData(res.data);
+      })
+      .catch(() => {
+        console.log("Data alınamadı");
+      });
   };
   return (
     <div className="form">
       <form action="">
         <h1>GITHUB JOB FINDER</h1>
-        <input type="text" name="" id="" placeholder="DESCRIPTION" />
+        <input
+          ref={description}
+          type="text"
+          name=""
+          id="desc"
+          placeholder="DESCRIPTION"
+        />
         <br />
-        <input type="text" name="" id="" placeholder="LOCATION" />
+        <input
+          ref={location}
+          type="text"
+          name=""
+          id="loc"
+          placeholder="LOCATION"
+        />
         <br />
-        <button onClick={newQuerry} type="button">
+        <button className="src-btn" onClick={newQuerry} type="button">
           SEARCH
         </button>
       </form>
