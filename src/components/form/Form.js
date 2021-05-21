@@ -1,23 +1,30 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./Form.css";
+import Loading from "../../assets/loading.gif";
+import FourZeroFour from "../../assets/404.png";
 import axios from "axios";
 
 export default function Form({ setData }) {
+  const [loading, setLoading] = useState(false);
+  const [myData, setMyData] = useState([1]);
   const description = useRef();
   const location = useRef();
   const newQuerry = () => {
+    setLoading(true);
     axios
       .get(
         `./positions.json?description=${description.current.value}&location=${location.current.value}`
       )
       .then((res) => {
-        console.log(res);
+        setLoading(false);
         setData(res.data);
+        setMyData(res.data);
       })
       .catch(() => {
         console.log("Data alınamadı");
       });
   };
+
   return (
     <div className="form">
       <form action="">
@@ -42,6 +49,13 @@ export default function Form({ setData }) {
           SEARCH
         </button>
       </form>
+      <div>{loading === true ? <img src={Loading} alt="" /> : null}</div>
+      <div>
+        {" "}
+        {myData.length === 0 ? (
+          <img src={FourZeroFour} alt="not found" />
+        ) : null}{" "}
+      </div>
     </div>
   );
 }
